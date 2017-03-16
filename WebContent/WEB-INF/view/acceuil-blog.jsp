@@ -59,10 +59,7 @@
 					<input type="password" class="form-control"
 						id="password" placeholder="Mot de passe">
 				</div>
-				<div class="checkbox">
-					<label> <input type="checkbox"> Se souvenir de moi
-					</label>
-				</div>
+				
 				<button type="submit" class="btn btn-default">Valider</button>
 				<div>
 					<a href="/BlogV1/article/liste">Liste des articles</a>
