@@ -28,14 +28,13 @@ public class ArticleControleur {
 		//ajouter le service au model
 		model.addAttribute("ListeArticles", articles);
 		
-		return "liste-article";
+		return "accueil-blog";
 	}
 	
 	@GetMapping("/ajouterArticle")
 	public String ajouterArticle(Model model){
 		Article nouveauArticle = new Article();
-		model.addAttribute("nouveauArticle", nouveauArticle);
-		
+		model.addAttribute("nouveauArticle", nouveauArticle);		
 		
 		return "article-form";
 	}

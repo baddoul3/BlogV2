@@ -1,11 +1,9 @@
 body{
 	 background-color: #eee;
 	 background-position: center;
-    background-size: cover;
-    
-      
-	
+    background-size: cover;	
 }
+
 .formulaire{
 	padding-top: 75px;
     width: 95%;
@@ -37,7 +35,7 @@ section .heading{
 #about{
 }
 #about .heading h1{
-	font-size: 32px
+	font-size: 48px
 	color:#000040;
 	text-transform: uppercase;
 }
@@ -59,7 +57,9 @@ section .heading{
 	text-align: center;
 } 
 
-
+.container-list{
+	margin-bottom: 30px;
+}
 
 .icon-bar{
 	background: #fff;
@@ -96,23 +96,41 @@ section .heading{
 	 color: #000080;	
 }
 
+#cover {
+    background: #222 url('/BlogV2/resources/img/stars.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#action{
+	text-align: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
 footer{
    background: #333; 
    padding: 20px 0 40px;
 }
-footer .glyphicon{
+.container .glyphicon{
     font-size: 15px;
     margin: 20px;
-    color: #80ff00;
+    color: #ff8040;
     height: 30px;
 }
 
-footer .glyphicon:hover{
+.container .glyphicon:hover{
    font-size: 20px;
 }
-footer h5{
+.container h5{
     color: azure;
-    font-weight: normal;
+    font-size: 14px;
 }
 
 

@@ -59,11 +59,11 @@
 					<input type="password" class="form-control"
 						id="password" placeholder="Mot de passe">
 				</div>
+				<input type="button"  width="200px" value="Gérer les articles"
+			onclick="window.location.href='AdministrerArticles'; return false;"
+			class="btn btn-default"
+	/>
 				
-				<button type="submit" class="btn btn-default">Valider</button>
-				<div>
-					<a href="/BlogV1/article/liste">Liste des articles</a>
-				</div>
 
 			</form>
 		</div>
@@ -135,11 +135,21 @@
 
 	</section>
 
-	<footer class="text-center">
-		<a href="#about"> <span class="glyphicon glyphicon-chevron-up"></span>
+	<section id="cover">
+        <div id="cover-caption">
+            <div class="container">
+                <div class="col-sm-10 col-sm-offset-1">
+                     <a href="#about"> <span class="glyphicon glyphicon-chevron-up"></span>
 		</a>
-		<h5>Copyright © 2017 by Baghdadi. All rights reserved</h5>
-	</footer>
+		<h5>Copyright © 2017 by Baghdadi. All rights reserved</h5>              
+                    
+                    <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
