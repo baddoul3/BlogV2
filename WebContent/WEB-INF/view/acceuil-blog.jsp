@@ -3,7 +3,9 @@
 
 <head>
 <meta charset="utf-8">
-<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700'
+	rel='stylesheet' type='text/css'>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="text/javascript"
 	src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -12,12 +14,13 @@
 <link
 	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700'
+	rel='stylesheet' type='text/css'>
 <link href="http://bootswatch.com/flatly/bootstrap.min.css"
 	rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css"
-	href="/BlogV1/resources/css/style.css">
-	
-	
+<link type="text/css" rel="stylesheet"
+	href="${pageContext.request.contextPath}/resources/css/style.css" />
+
 </head>
 
 <body>
@@ -27,14 +30,14 @@
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse"
 						data-target="#navbar-ex-collapse">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span> 
+						<span class="icon-bar"></span>
 					</button>
 				</div>
 				<div class="collapse navbar-collapse" id="navbar-ex-collapse">
 					<ul class="nav navbar-left navbar-nav">
-						<li class="active"><a href="#">Home</a></li>
+						<li ><a href="#">Home</a></li>
 						<li><a href="#">Articles</a></li>
 						<li><a href="#">Photos</a></li>
 						<li><a href="#">Contact</a></li>
@@ -44,39 +47,40 @@
 		</div>
 	</section>
 	<section>
-		<div class=" formulaire container-fluid">
+		<div class=" formulaire">
 			<form class="form-inline">
 				<div class="form-group">
-					<label class="sr-only" for="exampleInputEmail3">Email
+					<label class="sr-only" for="email"> 
 						address</label> <input type="email" class="form-control"
-						id="exampleInputEmail3" placeholder="Email">
+						id="email" placeholder="E-mail">
 				</div>
 				<div class="form-group">
-					<label class="sr-only" for="exampleInputPassword3">Password</label>
+					<label class="sr-only" for="password"></label>
 					<input type="password" class="form-control"
-						id="exampleInputPassword3" placeholder="Password">
+						id="password" placeholder="Mot de passe">
 				</div>
 				<div class="checkbox">
-					<label> <input type="checkbox"> Remember me
+					<label> <input type="checkbox"> Se souvenir de moi
 					</label>
 				</div>
-				<button type="submit" class="btn btn-default" >Sign in</button>
-				<a href="/BlogV1/article/liste">Back to List</a>
+				<button type="submit" class="btn btn-default">Valider</button>
+				<div>
+					<a href="/BlogV1/article/liste">Liste des articles</a>
+				</div>
+
 			</form>
 		</div>
 	</section>
 
 	<section id="about" class="container-fluid">
-
 		<div class="col-xs-8 col-md-4 profile-picture">
-			<img alt="moi" src="/BlogV1/resources/img/kai.jpg"
-				class="img-circle">
+			<img alt="moi" src="/BlogV2/resources/img/kai.jpg" class="img-circle">
 		</div>
 		<div class="heading ">
-			<h1>Le blog de Samy</h1> 			
+			<h1>Le blog de Samy</h1>
 		</div>
 	</section>
-	
+
 	<section id="posts">
 
 		<div class="posts-bloc">
@@ -111,7 +115,7 @@
 	<section id="posts">
 
 		<div class="posts-bloc">
-			<h3>Article1</h3>
+			<h3>Article2</h3>
 			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 				Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque
 				penatibus et magnis dis parturient montes, nascetur ridiculus mus.

@@ -1,49 +1,118 @@
-html,
-body { 	
-    height: 100%;
-}
-
-
-/* cover */
-
-#cover {
-    background: #222 url('/BlogV1/resources/img/stars.jpg') center center no-repeat;
+body{
+	 background-color: #eee;
+	 background-position: center;
     background-size: cover;
-    color: white;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    align-items: center;
+    
+      
+	
+}
+.formulaire{
+	padding-top: 75px;
+    width: 95%;
+	margin: 0 auto;
+	text-align: right;
+	border-radius: 10px;
+	
+}
+.form-group{
+	background-color: #f8fcfd !important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.profile-picture{
+	text-align: center;
+	margin: 0 auto;
+	float: none;
+}
+section .heading{
+	text-align: center;
+	padding-bottom:40px;
+	
+}
+#about{
+}
+#about .heading h1{
+	font-size: 32px
+	color:#000040;
+	text-transform: uppercase;
 }
 
-#cover-caption {
-    width: 100%;
+.navbar{  
+    font-size:16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;     
+}
+.navbar  .navbar-nav  
+{
+	display: inline-block;
+	float: none;
+	vertical-aline: top;
+} 
+.navbar  .navbar-collapse  
+{
+	text-align: center;
+} 
+
+
+
+.icon-bar{
+	background: #fff;
+}
+#posts{
+	white
 }
 
-[class*="span"].centred {
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
+
+.separateur{
+   width: 80%;
+	margin: 0 auto;
+	text-align: centre;
+	padding: 30px;
+	margin-bottom: 20px;    
+}
+.white-divider{
+	width: 80%;
+    height: 2px;
+    background: #fff;
+    margin: 0 auto;	
+}
+.posts-bloc{
+	width: 80%;
+	margin: 0 auto;
+	text-align: centre;
+	padding: 30px;
+	background: #f8fcfd;
+	border-radius: 10px;
+	margin-bottom: 20px;	
 }
 
-.section-content {
-    padding: 5rem 0;
+.posts-bloc h3{
+	 color: #000080;	
 }
 
-#about {
-    background: url('img/girlincar.jpg') center center no-repeat;
-    background-size: cover;
+footer{
+   background: #333; 
+   padding: 20px 0 40px;
+}
+footer .glyphicon{
+    font-size: 15px;
+    margin: 20px;
+    color: #80ff00;
+    height: 30px;
 }
 
-.about-text {
-    background: rgba(0,0,0,0.8);
-    color: white;
-    padding: 1.875rem;
+footer .glyphicon:hover{
+   font-size: 20px;
+}
+footer h5{
+    color: azure;
+    font-weight: normal;
 }
 
-#footer-main {
-    background: #222;
-    color: white;
-    font-size: 0.8rem;
-    padding: 2.5rem 0;
-}
+
