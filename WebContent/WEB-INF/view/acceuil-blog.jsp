@@ -16,7 +16,7 @@
 	rel="stylesheet" type="text/css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700'
 	rel='stylesheet' type='text/css'>
-<link href="http://bootswatch.com/flatly/bootstrap.min.css"
+<link href=http://bootswatch.com/flatly/bootstrap.min.css
 	rel="stylesheet" type="text/css">
 <link type="text/css" rel="stylesheet"
 	href="${pageContext.request.contextPath}/resources/css/style.css" />
@@ -24,6 +24,7 @@
 </head>
 
 <body>
+
 	<section class="wrapper">
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -59,10 +60,8 @@
 					<input type="password" class="form-control"
 						id="password" placeholder="Mot de passe">
 				</div>
-				<input type="button"  width="200px" value="Gérer les articles"
-			onclick="window.location.href='AdministrerArticles'; return false;"
-			class="btn btn-default"
-	/>
+				<input type="button"  value="Valider"
+			onclick="window.location.href='AdministrerArticles'; return false;" class="btn btn-info"/>
 				
 
 			</form>
@@ -74,7 +73,7 @@
 			<img alt="moi" src="/BlogV2/resources/img/kai.jpg" class="img-circle">
 		</div>
 		<div class="heading ">
-			<h1>Le blog de Samy</h1>
+			<h1 class="display-5">Le blog de Kai</h1>
 		</div>
 	</section>
 

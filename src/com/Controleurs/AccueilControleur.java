@@ -20,7 +20,7 @@ public class AccueilControleur {
 	private ArticleService articleService;	
 	
 	@GetMapping("/liste")
-	public String listeArticles(Model model){		
+	public String liste(Model model){		
 			
 		//lire le service 
 		List<Article> articles = articleService.getListeArticle();
@@ -43,12 +43,19 @@ public class AccueilControleur {
 		return "liste-article";
 	}
 	
-	@GetMapping("/gererArticles")
-	public String gererArticles(Model model){
+	@GetMapping("/AccueilListe")
+	public String AccueilListe(Model model){		
+			
+		//lire le service 
+		List<Article> articles = articleService.getListeArticle();
 		
-				
-		return "liste-article";
+		//ajouter le service au model
+		model.addAttribute("ListeArticles", articles);
+		
+		return "acceuil-blog";
 	}
+	
+	
 	 
 
 }

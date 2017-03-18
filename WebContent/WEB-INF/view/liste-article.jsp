@@ -48,12 +48,11 @@
 	<section>
 		<div class=" formulaire">
 			<form class="form-inline">
+
+			<input type="button"  value="Accueil"
+			onclick="window.location.href='AccueilListe'; return false;" class="btn btn-info"/>
 				
-				<button type="button"  
-			onclick="window.location.href='listeArticles'; return false;"
-			class="btn btn-default"
-	>Accueil</button>
-				
+		 <%--  <p><a href=" ${pageContext.request.contextPath}/accueil/liste" >Liste</a></p>   --%>
 
 			</form>
 		</div>
@@ -64,68 +63,69 @@
 			<img alt="moi" src="/BlogV2/resources/img/kai.jpg" class="img-circle">
 		</div>
 		<div class="heading ">
-			<h1 class="display-3">Le blog de Samy</h1>
+			<h1 class="display-5">Le blog de Kai</h1>
 		</div>
 	</section>
-<section  class="container-list"> 
-<div class="container" >
-		<div class="row">
-			<div class="table-responsive">
-			<table class="table table-hover table-striped table-bordered">
-				<tr class="warning">
-					<th>Id article</th>
-					<th>Titre</th>
-					<th>Catégorie</th>
-					<th id="action">Action</th>
-				</tr>
-				<c:forEach var="tempArticle" items="${ListeArticles}">
-				
-			<!-- construct an update link -->
-			<c:url var="updateLink" value="/article/majArticle">			
-				<c:param name="articleId" value="${tempArticle.idArticle}"/>
-			</c:url>
-			<c:url var="deleteLink" value="/article/suppArticle">			
-				<c:param name="articleId" value="${tempArticle.idArticle}"/>
-			</c:url>
-			
-					<tr>
-						<td>${tempArticle.idArticle}</td>
-						<td>${tempArticle.titreArticle}</td>
-						<td>${tempArticle.categorie}</td>
-						<td id="action">
-						<a href="${updateLink}">Modifier</a>
-					
-						<a href="${deleteLink}"
-						onclick="if(!(confirm('Etes vous sûr?')))return false"
-						>Supprimer</a>
-					</td>
-					</tr>
-				</c:forEach>
-				</table>
+	<section class="container-list">
+		<div class="container">
+			<div class="row">
+				<div class="table-responsive">
+					<table class="table table-hover table-striped table-bordered">
+						<tr class="warning">
+							<th>Id article</th>
+							<th>Titre</th>
+							<th>Catégorie</th>
+							<th id="action">Action</th>
+						</tr>
+						<c:forEach var="tempArticle" items="${ListeArticles}">
+
+							<!-- construct an update link -->
+							<c:url var="updateLink" value="/article/majArticle">
+								<c:param name="articleId" value="${tempArticle.idArticle}" />
+							</c:url>
+							<c:url var="deleteLink" value="/article/suppArticle">
+								<c:param name="articleId" value="${tempArticle.idArticle}" />
+							</c:url>
+
+							<tr>
+								<td>${tempArticle.idArticle}</td>
+								<td>${tempArticle.titreArticle}</td>
+								<td>${tempArticle.categorie}</td>
+
+
+								<td id="action"><button onclick="window.location.href='updateLink'; return false;"
+										class="btn btn-primary">Modifier</button> 
+										<button onclick="window.location.href='deleteLink'; return false;"
+										class="btn btn-danger">Modifier</button>
+
+								</td>
+							</tr>
+						</c:forEach>
+					</table>
+				</div>
 			</div>
 		</div>
-	</div>
 	</section>
 	<section id="cover">
-        <div id="cover-caption">
-            <div class="container">
-                <div class="col-sm-10 col-sm-offset-1">
-                     <a href="#menu"> <span class="glyphicon glyphicon-chevron-up"></span>
-		</a>
-		<h5>Copyright © 2017 by Baghdadi. All rights reserved</h5>              
-                    
-                    <br>
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </section>
+		<div id="cover-caption">
+			<div class="container">
+				<div class="col-sm-10 col-sm-offset-1">
+					<a href="#menu"> <span class="glyphicon glyphicon-chevron-up"></span>
+					</a>
+					<h5>Copyright © 2017 by Baghdadi. All rights reserved</h5>
+
+					<br>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<script
-		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>	
-	
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
 </body>
 
 </html>
