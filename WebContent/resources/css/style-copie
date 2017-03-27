@@ -1,0 +1,198 @@
+body{
+	 background-color: #eee;
+	 background-position: center;
+    background-size: cover;	
+}
+#container{
+    width: 1400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-: 20px;
+}
+#header{
+    height: auto;
+}
+#menu{
+    height: 100px;
+}  
+#main-sidebar{
+    width: 300px;
+    height: 200px;
+    float: left;
+    background-color: #eee;
+    
+} 
+#sidebar{
+   background-color: white;
+    height: auto;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
+}
+#main-body{
+	 background-color: #eee;
+    width:1100px;
+    float: right;
+     margin-bottom: 10px;
+     height: auto;
+}
+
+#posts{
+	background-color: white;
+    height: auto;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+	 
+}
+
+#footer{
+    height: 150px;
+    clear: both;
+}
+
+.formulaire{
+	margin-right: 5px; 
+	padding-top: 75px;
+	text-align: right;
+	
+}
+.form-group{
+	background-color: #f8fcfd !important;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: bold;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.profile-picture{
+	text-align: center;
+	margin: 0 auto;
+	float: none;
+}
+section .heading{
+	text-align: center;
+	padding-bottom:40px;
+	
+}
+#about{
+	height: 400px;
+}
+#about .heading h1{
+	font-size: 48px ;
+	color:#000040;
+	text-transform: uppercase;
+}
+
+.navbar{  
+    font-size:16px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;     
+}
+.navbar  .navbar-nav  
+{
+	display: inline-block;
+	float: none;
+	vertical-aline: top;
+} 
+.navbar  .navbar-collapse  
+{
+	text-align: center;
+} 
+
+.container-list{
+	margin-bottom: 30px;
+}
+
+.icon-bar{
+	background: #fff;
+}
+
+
+
+.separateur{
+   width: 80%;
+	margin: 0 auto;
+	text-align: centre;
+	padding: 30px;
+	margin-bottom: 20px;    
+}
+.white-divider{
+	width: 80%;
+    height: 2px;
+    background: #ff0000;
+    margin: 0 auto;	
+}
+.posts-bloc{
+	margin: 0 auto;
+	text-align: left;
+	padding: 30px;
+	background: #f8fcfd;
+	border-radius: 10px;
+	margin-bottom: 20px;	
+}
+
+.posts-bloc h3{
+	 color: #000080;	
+}
+
+#cover {
+    background: #222 url('/BlogV2/resources/img/stars.jpg') center center no-repeat;
+    background-size: cover;
+    color: white;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#action{
+	text-align: center;
+}
+
+#cover-caption {
+    width: 100%;
+}
+
+#cover-header {
+    background: #222 url('/BlogV2/resources/img/stars.jpg') center center no-repeat;    
+    display: flex;
+    align-items: center;
+     width: 1400px;
+}
+.sidbar{
+	width: 25%;
+	float: left;
+	background-color: #fff;
+	
+}
+
+footer{
+   background: #333; 
+   padding: 20px 0 40px;
+}
+.container .glyphicon{
+    font-size: 15px;
+    margin: 20px;
+    color: #ff8040;
+    height: 30px;
+}
+
+.container .glyphicon:hover{
+   font-size: 20px;
+}
+.container h5{
+    color: azure;
+    font-size: 14px;
+}
+
+
